@@ -1,0 +1,39 @@
+body {
+  
+margin: 30px;
+/* background: rgb(71,243,244);
+background: linear-gradient(90deg, rgba(71,243,244,0.36207986612613796) 0%, rgba(253,29,248,0.38728995015975143) 50%, rgba(113,20,252,0.37608546836703427) 100%);
+  background-repeat: no-repeat; */
+}
+#gallery {
+  padding: 0px;
+  text-decoration: none;
+}
+#gallery li {
+  list-style: none;
+}
+#gallery div {
+  display: flex;
+  padding: 10px;
+}
+#gallery img {
+  width: calc(100% - 30px);
+}
+
+
+/* TASK 6 */
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
+h2 {
+ margin-top: 15px;
+ margin-bottom: 15px;
+}
