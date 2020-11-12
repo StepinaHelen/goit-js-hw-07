@@ -20,7 +20,13 @@ const images = [
 const image = images.map(element => {
   const imagelListEl = document.createElement("li");
 
-  imagelListEl.insertAdjacentHTML("afterbegin", `<img src ="${element.url}" alt ="${element.alt}">`)
+
+   const imageRef = document.createElement("img")
+  imageRef.setAttribute('src', `${element.url}`)
+    imageRef.setAttribute('alt', `${element.alt}`)
+  imagelListEl.appendChild(imageRef)
+  // с помощью insertAdjacentHTML: 
+  // imagelListEl.insertAdjacentHTML("afterbegin", `<img src ="${element.url}" alt ="${element.alt}">`)
 
   return imagelListEl;
 });
